@@ -4,7 +4,7 @@
   "description": "PhantomPay backend service",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -r src/db/migrations dist/db/migrations",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "test": "vitest --run",
